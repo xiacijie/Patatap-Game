@@ -10,8 +10,15 @@
 	function onKeyDown(event) {
 	// When a key is pressed, set the content of the text item:
 	
-	var myCircle = new Path.Circle(new Point(100, 70), 10);
+
+	var max = new Point(view.size.width,view.size.height);
+	var random_point = Point.random();
+	var point = max * random_point;
+
+	var myCircle = new Path.Circle(point, 10);
 	myCircle.fillColor = 'purple';
+	
+	console.log(max);
 }
 	
 </script>
